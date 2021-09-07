@@ -9,3 +9,7 @@ edition = "2018"
 bevy = "0.5"
 rapier2d = "0.11"
 bevy_rapier2d = "0.11"
+
+[profile.dev.package."*"]
+# Optimize dependencies in dev so game engine / physics has good performance
+opt-level = 3
